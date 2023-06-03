@@ -1,0 +1,40 @@
+.border-1 {
+  border-width: 1px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.violet-button {
+  color: #5b51de;
+}
+
+.circle {
+  position: absolute;
+  top: -100px;
+  left: 40px;
+  background: linear-gradient(
+    180deg,
+    rgba(91, 81, 222, 0.7) 0%,
+    rgba(255, 185, 185, 0) 100%
+  );
+}
+
+.shadow-all {
+  box-shadow: 0 0 5px 5px rgb(0 0 0 / 0.05);
+}
+
+.button {
+  @apply rounded-lg min-w-fit bg-violet-600 text-white px-4 py-2;
+}
+
+.ul-footer li:first-child {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.ul-footer li {
+  @apply text-gray-500 text-sm;
+}
